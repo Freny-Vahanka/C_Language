@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int x,y;
+	clrscr();
+	printf("Enter the value of x and y: ");
+	scanf("%d%d",&x,&y);
+	printf("Before swapping x=%d and y=%d\n",x,y);
+
+	x=x+y;
+	y=x-y;
+	x=x-y;
+	printf("After swapping x=%d and y=%d",x,y);
+	getch();
+}
