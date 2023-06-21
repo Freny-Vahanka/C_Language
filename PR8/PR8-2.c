@@ -1,35 +1,27 @@
 #include<stdio.h>
 
-void arrayinput(int a[],int n)
-{
-	int i;
-	
-	for (i=0; i<n; i++)
-	{
-		printf("Enter a[%d]: ");
-		scanf("%d", &a[n]);
-	}
-}
-
 void main()
 {
-	int n;
-	
-	printf("Enter the length of array : ");
+	int arr[10],n,i;
+
+	int *ptr=arr;
+
+	printf("Enter the number of elements : ");
 	scanf("%d",&n);
 	
-	int a[n];
-	int *ptr[n];
+	printf("\nEnter %d Elements:",n);
 	
-	ptr[n] = &a;
-	
-	 void arrayinput();
-	
-	int i;
-	
-	for(i=0; i<n; i++)
-	{
-	  printf("a[%d]:%d\n",i,*(ptr+i));
-	}
-}
+		for (i=0;i<n;i++)
+		{
+			scanf("%d",&arr[i]);
+			
+		}
+			
+		for (i=0;i<n;i++)
+		{
+			printf("a[%d] = %d",i,n);
+			printf("%d\n",*(ptr+i));
+		}
+			
 
+}
